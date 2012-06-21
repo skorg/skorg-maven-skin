@@ -49,9 +49,13 @@
   $dateFormat.applyPattern( "yyyy.MM.dd '@' hh:mm:ss z" )
   #set ($dateTime = $dateFormat.format( $currentDate ) )
  
-  <span id="published">
-    Current Version: ${project.version} | Last Published $dateTime By #link( "http://maven.apache.org", "Maven", "_top" ) 
-  </span>  
+  <div id="pubBanner" class="col-full">
+    <div class="col-right">
+      <p class="pubText">
+        Current Version: ${project.version} | Last Published $dateTime By #link( "http://maven.apache.org", "Maven", "_top" ) 
+      </p>
+    </div>
+  </div>
 #end
 
 <?php 

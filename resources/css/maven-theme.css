@@ -10,13 +10,23 @@ a.newWindow, a.newWindow:link, a.newWindow:visited, a.newWindow:active, a.newWin
   padding-right: 18px;
 }
 
+.section 
+{
+  padding: 4px;
+}
+
 code
 {
   font-family: Courier, monospace;
   font-size: 13px;
 }
 
-#published
+#pubBanner .col-right
+{
+  padding-right:10px;
+}
+
+p.pubText
 {
   font-size: 11px;
   font-style: oblique;
@@ -24,37 +34,42 @@ code
 
 table.bodyTable
 {
-  padding: 0px;
   width: 100%;
-  margin-left: 5px;
-  margin-right: -5px;
+  #margin-left: 5px;
+  #margin-right: -5px;
   border-spacing: 1px;
   border-collapse: separate;
 }
 
-table.bodyTable th
+table.bodyTable th 
 {
   color: white;
-  background-color: #bbbbb;
+  background-color: #bbb;
   text-align: left;
   font-weight: bold;
 }
 
-table.bodyTable th, table.bodyTable td
+table.bodyTable th, table.bodyTable td 
 {
-  padding: 2px 10px 2px 10px;
-  vertical-align: top;
+  font-size: 14px;
+  padding: 0px 0px 0px 10px;
+  vertical-align: middle;
 }
 
 table.bodyTable tr.a 
 {
-  background-color: #ddddd;
+  background-color: #ddd;
 }
 
-table.bodyTable tr.b {
-
-  background-color: #eeeee;
+table.bodyTable tr.b 
+{
+  background-color: #eee;
 }
+
+table.bodyTable tr.a:hover, table.bodyTable tr.b:hover 
+{
+  background: #dfe3db;
+}  
 
 .errormark, .warningmark, .donemark, .infomark 
 {
