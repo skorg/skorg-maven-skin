@@ -1,1 +1,6 @@
-target
+/bin
+/target
+/site
+/.settings
+/.classpath
+/.project
